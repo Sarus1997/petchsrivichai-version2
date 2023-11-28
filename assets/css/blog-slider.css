@@ -1,0 +1,62 @@
+.blog-slider {
+    position: relative;
+  }
+
+  .blog-slider .slick-next,
+  .blog-slider .slick-prev,
+  .blog-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: 40px; /* ปรับขนาดตามที่ต้องการ */
+    height: 40px; /* ปรับขนาดตามที่ต้องการ */
+    line-height: 40px;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+  }
+
+  .blog-slider .slick-next {
+    right: -10px;
+    width: 40px; /* เพิ่ม width เพื่อให้มีขนาดเท่ากันกับ .slick-prev */
+    height: 40px; /* เพิ่ม height เพื่อให้มีขนาดเท่ากันกับ .slick-prev */
+  }
+
+  .blog-slider .slick-prev {
+    left: -20px;
+  }
+
+
+  .blog-slider .slick-next:before,
+  .blog-slider .slick-prev:before {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'themify';
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s linear;
+  }
+
+  .blog-slider .slick-next:before {
+    content: '\e649  ';
+  }
+
+  .blog-slider .slick-prev:before {
+    content: '\e64a';
+  }
+
+  .blog-slider .slick-next:hover:before,
+  .blog-slider .slick-prev:hover:before {
+    color: #ccc;
+  }
